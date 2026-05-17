@@ -9,7 +9,7 @@ def register_event(request):
         if form.is_valid():
             registration = form.save()
             request.session["last_registration_id"] = registration.id
-            return redirect("registration_success")
+            return redirect("events:registration_success")
         else:
             messages.error(request, "Please correct the errors below.")
     else:
