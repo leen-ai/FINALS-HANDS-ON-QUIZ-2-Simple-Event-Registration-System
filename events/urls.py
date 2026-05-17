@@ -6,5 +6,5 @@ app_name = 'events'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('events.urls', namespace='events')),  
+    path('success/', views.registration_success, name='registration_success'),  
     ]
