@@ -4,5 +4,5 @@ from events import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.register_event, name='home'),  
+    path('', include('events.urls', namespace='events')),  
     ]
