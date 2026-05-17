@@ -144,7 +144,7 @@
             </div>
         {% endif %}
         
-        <form method="post" action="{% url 'events:register_event' %}" novalidate>
+        <form method="post" action="/" novalidate>
             {% csrf_token %}
             
             {% if form.non_field_errors %}
